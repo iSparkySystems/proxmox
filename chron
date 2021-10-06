@@ -1,15 +1,10 @@
 #Daily Start Guest
-# Set to Autostart 10 60 * * * root qm start 106 # PfSense
-15 06 * * * root qm start 107 # ERPNext
-20 06 * * * root qm start 104 # FreePBX
-
-30 20 * * * root qm start 100 # ISP-PDC
+# Start VM at Certain Time Daily
+15 06 * * * root qm start 100 # WhatEvaVM
 
 # Daily Shutdown Guest
-15 18 * * * root qm shutdown 104 # FreePBX
-50 23 * * * root qm shutdown 107 # ERPNext
-45 05 * * * root qm shutdown 100 # ISP-PDC
-#55 50 * * * root qm shutdown 106 # PfSense
+# Shutdown VM at Certain Time Daily
+15 18 * * * root qm shutdown 100 # WhatEvaVM
 
 # Daily Reboot 
 # 00 06	* * *	root	/sbin/shutdown -r now
